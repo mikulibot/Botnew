@@ -4452,7 +4452,7 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
       
  const helpmenu = `Konichiwa *${pushname}* Senpai,
 
-I am *Miku Nakano*, a bot developed by *Fantox*.
+I am *Mád.*, a bot developed by *Mad! (Me of course)*.
 
 🔰 My prefix is:  ${prefix}
 
@@ -4462,7 +4462,7 @@ Here's the list of my Commands.
 
  *━━━━━━〈  🎆 Core 🎆  〉━━━━━━*
 
-profile, help, delete, deleteall, listgc, listpc, welcome, support, repo, script 
+profile, help, delete, deleteall, listgc, listpc, welcome, support,
  
  *━━━━━━〈  🎀 Owner 🎀  〉━━━━━━*
 
@@ -4470,7 +4470,7 @@ self, public, ban, bangroup, bye, join, bye, block, unblock, broadcast
 
  *━━━━━━〈  ⭕ Group ⭕  〉━━━━━━*
 
-promote, demote, revoke, remove, tagall, hidetag, groupsetting, grouplink, setgcpp, setname, setdesc, group, nsfw 
+promote, demote, revoke, remove, tagall, hidetag, groupsetting, grouplink, setgcpp, setname, setdesc, group,
 
  *━━━━━━〈  ➰ Anti Link ➰  〉━━━━━━*
  
@@ -4478,7 +4478,7 @@ antilinkgc, antilinktg, antilinktt, antilinkytch, antilinkytvid, antilinkig, ant
 
  *━━━━━━〈  🔍 Search 🔍  〉━━━━━━*
 
-play, song, yts, lyrics, google, playstore, gimage, pinterest, image, movie, wallpaper, searchgc, happymod, wikimedia, ringtone, anime, animestory, manga, ringtone   
+play, yts,  google, playstore, gimage, pinterest, image, wallpaper, searchgc, happymod, wikimedia, ringtone, anime, animestory, manga,  
 
  *━━━━━━〈  🔰 Convert 🔰  〉━━━━━━*
 
@@ -4486,20 +4486,11 @@ sticker, toimg, tovideo, togif , steal, stickermeme, emojimix, tourl, tomp3, toa
 
  *━━━━━━〈  🔉 Audio 🔉  〉━━━━━━*
 
-bass, tempo, blown, deep, earrape, fast, fat, nightcore, reverse, robot, slow, squirrel
-
- *━━━━━━〈  📍 Reactions 📍  〉━━━━━━*
-
-bonk, cry, bully, cuddle, hug, kiss, lick, pat, smug, yeet, blush, smile, wave, highfive, handhold, nom, glomp, bite, slap, kill, happy, wink, poke, dance, cringe
+bass, tempo, blown, deep, earrape, fast, fat, nightcore, reverse, robot, slow,
 
  *━━━━━━〈  🌌 Downloader 🌌  〉━━━━━━*
 
-play, ytmp3, ytmp4, ytvideo, mediafire, instagram, igtv, facebook, fbmp3, twitter, twittermp3, tiktok, tiktokaudio, tiktoknowm, mediafire  
-
- *━━━━━━〈  🈴 Weeb 🈴  〉━━━━━━*
-
-crosplay, waifu, loli, neko, ppcouple, feed, foxgirl, feed, meow, tickle, wallpaper, coffee, animenom, waifu3, neko2, feed, meow, tickle, migumin, awoo, animewallpaper2, anime, manga
-
+play, ytmp3, ytmp4, ytvideo, mediafire, instagram, igtv, facebook, fbmp3, twitter, twittermp3, mediafire.  
  *━━━━━━〈  ♨️ Informative ♨️  〉━━━━━━*
 
 animequote, quote, covid, earthquake, wiki
@@ -4510,24 +4501,16 @@ stickermeme, quotes, darkjoke
 
  *━━━━━━〈  🎐 Fun 🎐  〉━━━━━━*
 
-reaction, truth, dare, couple, soulmate, handsomecheck, beautifulcheck, awesomecheck, greatcheck, gaycheck, cutecheck, lesbiancheck, hornycheck, prettycheck, lovelycheck, uglycheck, charactercheck
+reaction, truth, dare, handsomecheck, beautifulcheck, awesomecheck, greatcheck, cutecheck, prettycheck, lovelycheck, uglycheck, charactercheck.
 
  *━━━━━━〈  🪁 Essentials 🪁  〉━━━━━━*
 
 translate, fliptext, toletter
 
- *━━━━━━〈  💥 NSFW 💥  〉━━━━━━*
-
-🍁 Type " *${prefix}nsfw* " then enable NSFW (Admin only!) 
-
-🍁 Then type " *${prefix}nsfwmenu* " to get full list of NSFW commands.
-
-
-
 
 
  『  *${global.BotName}*  』
- Powered by: *Fantox*
+ Powered by: *Mád.*
 
  🔰 To use any of these commands type 
  " *${prefix}<Command name>* ".
@@ -4556,8 +4539,6 @@ case '':
     if(isCmd){
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
-
-      mikupic ='https://wallpapercave.com/wp/wp10524580.jpg'
     
         
  const needhelpmenu = `Do you need help ${pushname} Senpai? Type *${prefix}help* to get my full command list.`
