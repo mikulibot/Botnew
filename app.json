@@ -1,7 +1,7 @@
 {
-  "name": "Miku-MD",
+  "name": "Mád.",
   "description": "A whatsApp bot based on Mád's Wisedom with Multi Device support",
-  "repository": "https://github.com/MadKing5588/Botnew ",
+  "repository": "https://github.com/FantoX001/Miku-MD",
   "logo": "https://wallpapercave.com/wp/wp10524580.jpg",
   "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
   "buildpacks": [
