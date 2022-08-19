@@ -3850,7 +3850,6 @@ if (isBanChat) return reply(mess.bangc)
 if (!m.isGroup) return replay(mess.grouponly)
 if (!AntiNsfw) return reply(mess.nonsfw)
 try{
-reply(mess.waiting)
 } catch (e) {error("Error")}	
 break
 
@@ -3994,14 +3993,6 @@ case 'cry':  case 'handhold':{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     if (!m.isGroup) return replay(mess.grouponly)	
-	var pat = await fetchJson(`https://api.waifu.pics/sfw/${command}`)
-	try {
-		let messsender = m.sender
-let musers=``
-try {
-users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-
- ment=[messsender,users]
 } catch {
 	users == "none"
 	 ment=[messsender,m.sender]
@@ -4031,13 +4022,7 @@ case 'nom':{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     if (!m.isGroup) return replay(mess.grouponly)	
-	var pat = await fetchJson(`https://api.waifu.pics/sfw/${command}`)
-	try {
-		let messsender = m.sender
-let musers=``
-try {
-users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-
+	
  ment=[messsender,users]
 } catch {
 	users == "none"
@@ -4068,12 +4053,6 @@ case 'hug':{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     if (!m.isGroup) return replay(mess.grouponly)	
-	var pat = await fetchJson(`https://api.waifu.pics/sfw/${command}`)
-	try {
-		let messsender = m.sender
-let musers=``
-try {
-users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
 
  ment=[messsender,users]
 } catch {
@@ -4106,13 +4085,6 @@ case 'dance':{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     if (!m.isGroup) return replay(mess.grouponly)	
-	var pat = await fetchJson(`https://api.waifu.pics/sfw/${command}`)
-	try {
-		let messsender = m.sender
-let musers=``
-try {
-users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-
  ment=[messsender,users]
 } catch {
 	users == "none"
@@ -4146,13 +4118,6 @@ case 'cuddle': case 'kick':{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     if (!m.isGroup) return replay(mess.grouponly)	
-	var pat = await fetchJson(`https://api.waifu.pics/sfw/${command}`)
-	try {
-		let messsender = m.sender
-let musers=``
-try {
-users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-
  ment=[messsender,users]
 } catch {
 	users == "none"
@@ -4188,12 +4153,6 @@ case 'cringe': case 'highfive':{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     if (!m.isGroup) return replay(mess.grouponly)	
-	var pat = await fetchJson(`https://api.waifu.pics/sfw/${command}`)
-	try {
-		let messsender = m.sender
-let musers=``
-try {
-users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
 
  ment=[messsender,users]
 } catch {
@@ -4234,10 +4193,6 @@ case 'cringe': case 'cuddle': case 'highfive': case 'handhold': case 'kick':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     if (!m.isGroup) return replay(mess.grouponly)						
-resggh = await axios.get(`https://nekos.life/api/v2/img/${command}`)         
-let resffj = await getBuffer(resggh.data.url)
-let resmain = await GIFBufferToVideoBuffer(resffj)   
-      await Miku.sendMessage(m.chat,{video: resmain, gifPlayback:true},{ quoted:m }).catch(err => {
                   return reply('error..')
                                   })
 break
@@ -4251,19 +4206,6 @@ case 'megumin':
 if (isBan) return reply(mess.banned)	 			
 if (isBanChat) return reply(mess.bangc)
 if (!m.isGroup) return replay(mess.grouponly)
-reply(mess.waiting)							
-ud = await axios.get('https://waifu.pics/api/sfw/megumin')
-var wbutsss = [
-    {buttonId: `-megumin`, buttonText: {displayText: `>>`}, type: 1},
-         ]
-      let buttonzMessage = {
-      image: {url:ud.data.url},
-       caption:  `Here it is...`,
-      footer: `${global.BotName}`,
-          buttons: wbutsss,
-     headerType: 4
-                      }
-await Miku.sendMessage(m.chat,buttonzMessage, { quoted:m }).catch(err => {
      return('Error!')
     })               
 break     
@@ -4399,28 +4341,7 @@ let srh = await manga.searchManga(q)
       /\[Written by MAL Rewrite]/g,
       ""
     )}`;
-Miku.sendMessage(m.chat,{image:{url:srh.data[0].images.jpg.large_image_url},caption:mang},{quoted:m})   
-break
-
-
-
-case 'waifu' :
-    if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    if (!m.isGroup) return replay(mess.grouponly)
-reply(mess.waiting)	
-    waifuddd = await axios.get('https://waifu.pics/api/sfw/waifu')
- var wbuttsssr = [
-    {buttonId: `-waifu`, buttonText: {displayText: `>>`}, type: 1},
-    ]
-        let button4Messagess = {
-        image: {url:waifuddd.data.url},
-        caption: 'More than one waifu will definitely ruin your Laifu!',
-        buttons: wbuttsssr,
-        headerType: 4
-         }     
-                                  
-    await Miku.sendMessage(m.chat, button4Messagess, { quoted:m }).catch(err => {
+Miku.sendMessage(m.chat,{image:{url:srh.data[0].images.jpg.large_image_url},caption:mang},{quoted:m})    
         return('error..')
         })
 break
@@ -4430,18 +4351,7 @@ case 'neko' :
     if (isBanChat) return reply(mess.bangc)
     if (!m.isGroup) return replay(mess.grouponly)
 reply(mess.waiting)	
-    waifuddd = await axios.get('https://waifu.pics/api/sfw/neko')
- var wbuttsssr = [
-    {buttonId: `-neko`, buttonText: {displayText: `>>`}, type: 1},
-    ]
-        let buttonMessagessf = {
-        image: {url:waifuddd.data.url},
-        caption: 'Nyaa...',
-        buttons: wbuttsssr,
-        headerType: 2
-         }     
-                                  
-    await Miku.sendMessage(m.chat, buttonMessagessf, { quoted:m }).catch(err => {
+   
         return('error..')
         })
 break
@@ -4451,19 +4361,6 @@ case 'loli' :
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     if (!m.isGroup) return replay(mess.grouponly)
-reply(mess.waiting)	
-    waifuddd = await axios.get('https://waifu.pics/api/sfw/shinobu')
- var wbuttsssr = [
-    {buttonId: `-loli`, buttonText: {displayText: `>>`}, type: 1},
-    ]
-        let buttonMessagessfgr = {
-        image: {url:waifuddd.data.url},
-        caption: 'Dont be a lolicon !',
-        buttons: wbuttsssr,
-        headerType: 2
-         }     
-                                  
-    await Miku.sendMessage(m.chat, buttonMessagessfgr, { quoted:m }).catch(err => {
         return('error..')
         })
 break
