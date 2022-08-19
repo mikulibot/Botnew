@@ -1,6 +1,6 @@
 {
- "name": "miku-md",
- "description": "Multi Device Whatsapp Bot By Xeon",
+ "name": "A Mád Bot! ",
+ "description": "بسم الله الرحمن الرحيم.",
  "version": "3.0.0",
  "main": "index.js",
  "type": "commonjs",
@@ -18,14 +18,13 @@
   "bot-md",
   "multi-device"
  ],
- "author": "Fantox (FantoX001)",
+ "author": "Mád",
  "license": "MIT",
  "dependencies": {
   "@adiwajshing/baileys": "^4.3.0",
   "@adiwajshing/keyed-db": "^0.2.4",
   "@develoka/angka-terbilang-js": "^1.4.2",
   "@shineiichijo/marika": "^2.0.2",
-  "@shineiichijo/nhentai-pdf": "^1.0.5",
   "@bochilteam/scraper": "^2.0.0",
   "awesome-phonenumber": "^2.70.0",
   "axios": "^0.24.0",
