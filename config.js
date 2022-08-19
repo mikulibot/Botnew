@@ -14,7 +14,7 @@ global.BotName = "Mád."
 global.packname = "Mád. bot"
 global.author = "By: Mád."
 global.OwnerName = "Mád."
-global.BotSourceCode = "https://github.com/FantoX001/Miku-MD"
+global.BotSourceCode = "https://github.com/MadKing5588/Botnew"
 global.SupportGroupLink = "https://chat.whatsapp.com/F8FQm5Uf9ZF4J4QtICL48s"
 global.sessionName = "session"
 
